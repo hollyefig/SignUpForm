@@ -247,7 +247,7 @@ button:disabled {
 @media only screen and (max-width:768px) {
 
     .leftBox {
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     .header {
@@ -264,10 +264,16 @@ button:disabled {
 
     .formWrapper {
         padding: 2em 2em;
+        margin:2em 0em 0em 0em;
+        justify-content: flex-end;
     }
 
     .iconWrapper {
         width: 100%;
+    }
+
+    .error {
+        font-size: .5rem;
     }
 }
 
@@ -280,6 +286,10 @@ button:disabled {
     .iconWrapper .material-symbols-outlined {
         font-size: 2rem;
     }
+
+    form legend {
+        font-size: .6rem;
+    }
     
     fieldset > div {
         flex-direction: column;
@@ -290,6 +300,10 @@ button:disabled {
     fieldset > div > div {
         width: 100%;
         margin:.5em 0em;
+    }
+
+    button {
+        padding: .5em;
     }
 }
 
