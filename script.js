@@ -1,7 +1,10 @@
 const input = document.querySelectorAll("input");
 const label = document.querySelectorAll("label");
 const errorMsg = document.querySelectorAll(".error");
+const button = document.getElementById("button");
 let firstEntry = [false, false, false, false, false, false];
+
+button.disabled = true;
 
 const inputEntered = (e) => {
   for (let i = 0; i < label.length; i++) {
@@ -22,5 +25,11 @@ const inputEntered = (e) => {
     pw1 !== pw2
       ? (errorMsg[5].textContent = "* Passwords do not match")
       : (errorMsg[5].textContent = "✔️");
+  }
+
+  if (pw1 === pw2 && pw1 !== "" && pw2 !== "") {
+    button.disabled = false;
+  } else {
+    button.disabled = true;
   }
 };

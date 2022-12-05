@@ -217,10 +217,78 @@ button {
     box-shadow: 2px 2px 8px #b4b4b4;
 }
 
+button:disabled {
+    background-color: rgb(133, 146, 167);
+    color:rgba(255, 255, 255, .5);
+    cursor: default;
+}
+
 .login {
     display: block;
     margin:1.2em 0em 0em 0em;
     font-size: .8rem;
 }
 
+@media only screen and (max-width:990px) {
+
+    .wrapper {
+        justify-content: center;
+    }
+
+    .formWrapper form {
+        width: 100%;
+    }
+
+    .divInput {
+        font-size: .6em;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .leftBox {
+        justify-content: center;
+    }
+
+    .header {
+        margin:.5em 0em 0em 0em;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: .55rem;
+    }
+
+    .formWrapper {
+        padding: 2em 2em;
+    }
+
+    .iconWrapper {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:650px) {
+
+    .leftSide {
+        width: 85vw;
+    }
+
+    .iconWrapper .material-symbols-outlined {
+        font-size: 2rem;
+    }
+    
+    fieldset > div {
+        flex-direction: column;
+        padding:0em 0em;
+        margin:0em 0em;
+    }
+
+    fieldset > div > div {
+        width: 100%;
+    }
+}
 
