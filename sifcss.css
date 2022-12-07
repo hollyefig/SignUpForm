@@ -312,11 +312,7 @@ button:disabled {
 
     fieldset > div > div {
         width: 100%;
-        margin:.5em 0em;
-    }
-
-    fieldset > div > div:last-child {
-        margin:0px 0px 1.5em 0px;
+        margin:.5em 0px 1.5em 0px;    
     }
 
     button {
