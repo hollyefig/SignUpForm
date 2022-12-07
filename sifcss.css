@@ -292,6 +292,10 @@ button:disabled {
         font-size: 12vw;
     }
 
+    .formWrapper {
+        padding:1em;
+    }
+
     .iconWrapper .material-symbols-outlined {
         font-size: 2rem;
     }
@@ -309,6 +313,10 @@ button:disabled {
     fieldset > div > div {
         width: 100%;
         margin:.5em 0em;
+    }
+
+    fieldset > div > div:last-child {
+        margin:0px 0px 1.5em 0px;
     }
 
     button {
