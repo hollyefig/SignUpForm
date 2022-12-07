@@ -29,6 +29,7 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .leftSide {
@@ -239,6 +240,10 @@ button:disabled {
         justify-content: center;
     }
 
+    .leftSide {
+        width: 90vw;
+    }
+
     .formWrapper form {
         width: 100%;
     }
@@ -251,15 +256,11 @@ button:disabled {
 @media only screen and (max-width:768px) {
 
     .leftBox {
-        justify-content: flex-end;
-    }
-
-    .header {
-        margin:.5em 0em 0em 0em;
+        justify-content: space-evenly;
     }
 
     .header h1 {
-        font-size: 2rem;
+        font-size: 9vw;
     }
 
     .header p {
@@ -268,7 +269,7 @@ button:disabled {
 
     .formWrapper {
         padding: 2em 2em;
-        margin:10% 0em 0em 0em;
+        margin:0% 0em 0em 0em;
         justify-content: flex-end;
     }
 
@@ -285,6 +286,10 @@ button:disabled {
 
     .leftSide {
         width: 85vw;
+    }
+    
+    .header h1 {
+        font-size: 12vw;
     }
 
     .iconWrapper .material-symbols-outlined {
